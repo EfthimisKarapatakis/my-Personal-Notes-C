@@ -9,7 +9,6 @@
 int main(){                               //function
     printf("Hello World \n\n");           //printf = print
                                           //"\n" new line
-    printf("da");
     return 0;                             //to close the function
 }
 */
@@ -19,8 +18,8 @@ int main(){
     int test = 69;                         //type VarName = Var;
                                            //type: int "0,1,2", float "19.99, -19.23", char "a, b, c"
                                                 //FOR FLOAT:
-``                                                  //another word for float is double but for bigger digit values
-                                                    //float and double will automatical show 6 digits
+``                                                  //another word for float is double but for bigger digit values with more precision
+                                                    //float and double will automatically show 6 digits
                                                     //you can write "%.1f" for one digit, "%.2f" for two etc.
                                                 //FOR CHAR:
                                                     //char  name = 'a';    //With single strings.
@@ -62,7 +61,7 @@ int main(){
 
 /* 5th: Constants.
 int main(){
-    const int items = 50;             //With the const commant you make a var unchanchable and read only
+    const int items = 50;             //With the const command you make a var unchangeable and read only
     float prize = 9.99;
     char currency = '$';
 
@@ -124,7 +123,7 @@ A list of all logical operators:
 /* 9th: Bool.
 int main(){
     bool isProgrammingFun = true;          //This is int 1
-    bool isFishTasty = false;              //thiw is int 0 so if you want to print it:
+    bool isFishTasty = false;              //this is int 0 so if you want to print it:
     printf("%d %d",isProgrammingFun, isFishTasty);          //Returns 1 0 (true false)
 
 
@@ -349,7 +348,7 @@ int main() {
         if (i == 4) {
             continue;           //it skips and continue to the next iteration in the loop
         }
-        printf("%i\n", i);      //012356789
+        printf("%i\n", i);      //012356789, no 4
     }
     return 0;
 }
@@ -384,7 +383,7 @@ myNumbers[3] = 100;
 */
 
 /* 21st: Array sizes.
-// To get the size of an array you use the sizeof operator:
+// To get the size of an array you use the sizeof() operator:
 int myNumbers[] = {10, 25, 50, 75, 100};
 printf("%lu", sizeof(myNumbers));       // Output 20.
                                         // It prints 20 instead of 5 because the sizeof operator return the size of a type in bytes.
@@ -485,7 +484,7 @@ int main() {
     printf("%c", greetings[0]);     // %c for char (single letter)
                                     // Output: H
     // Modify string:
-    greetings[0] = 'J';             // '' becase its a char
+    greetings[0] = 'J';             // '' because its a char
     printf("%s", greetings);        // Output: Jello World!
 
     // Loop through a string:
@@ -665,6 +664,7 @@ int main() {
 
 
                             // Example 2: Two parameter.
+                            
 void math(int x,int  y) {
     int sum = x + y;
     printf("The sum of %i and %i is %i\n",x , y, sum);
